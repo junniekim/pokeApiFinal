@@ -14,6 +14,7 @@ export class ItemComponent implements OnInit {
   pageNums: Array<any> = []
   count: number = 0
   itemArray: Array<ItemModel> = []
+
   constructor(private item: ItemService) {}
 
   //res.item.sort
