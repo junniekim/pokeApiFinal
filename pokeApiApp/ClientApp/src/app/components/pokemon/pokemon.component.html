@@ -1,0 +1,19 @@
+<!--entire screen-->
+<!-- iterate over my array on div that is a column  -->
+<div class="container">
+  <h1 style="text-align: center;">Pokemons</h1>
+
+  <!-- <button btn-btn-primary (click)="getPokemonAgain(3)">Click me</button>-->
+  <h3 style="text-align: center;">Click each pokemon for more information!</h3>
+
+  <div class="row">
+    <div *ngFor="let n of pokemonArray" class="col-lg-6 col-sm-12">
+      <app-individual-pokemon [pokemonModel]="n"></app-individual-pokemon>
+    </div>
+  </div>
+  <ul id="listMenu">
+    <li *ngFor="let x of pageNums; let i = index">
+      <button (click)="getPokemonAgain(i)">{{ i + 1 }}</button>
+    </li>
+  </ul>
+</div>

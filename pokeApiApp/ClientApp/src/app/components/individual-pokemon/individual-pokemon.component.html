@@ -1,0 +1,35 @@
+<div
+  (click)="showDetail = !showDetail"
+  class="row defaultBorder col-lg-12"
+  style="margin: 15px; padding: 0px;"
+  [ngClass]="getColor()"
+>
+  <div class="col-lg-6" style="text-align: center;">
+    <img [src]="pokemonModel.sprite" style="width: 150px; height: 150px;" />
+  </div>
+  <div class="col-lg-6 d-grid align-items-center">
+    <div class="row">
+      <div class="col-lg-12 display">Name: {{ pokemonModel.name }}</div>
+      <div class="col-lg-12 display">Type: {{ pokemonModel.typeName }}</div>
+    </div>
+  </div>
+  <div [ngClass]="getColor()" class="testingBorder" *ngIf="showDetail">
+    <div class="row">
+      <div class="col-lg-6 display" style="text-align: center;">
+        Height: {{ pokemonModel.height }}
+      </div>
+      <div class="col-lg-6 display" style="text-align: center;">
+        Weight: {{ pokemonModel.weight }}
+      </div>
+    </div>
+    <div class="row">
+      <div
+        class="col-lg-6 display"
+        style="text-align: center;"
+        *ngFor="let x of pokemonModel.stat"
+      >
+        <div>{{ x.name }}: {{ x.baseStat }}</div>
+      </div>
+    </div>
+  </div>
+</div>

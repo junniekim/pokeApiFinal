@@ -1,0 +1,18 @@
+<div class="container">
+  <h1 style="text-align: center;">Items</h1>
+  <h3 style="text-align: center;">Click each item for more information!</h3>
+  <div class="row">
+    <div *ngFor="let n of itemArray" class="col-lg-6 col-sm-12">
+      <app-individual-item [itemModel]="n"></app-individual-item>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <ul id="listMenu">
+        <li *ngFor="let x of pageNums; let i = index">
+          <button (click)="getItemAgain(i + 1)">{{ i + 1 }}</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,84 @@
+.defaultBorder {
+  border-style: solid;
+  border-width: thick;
+}
+.testingBorder {
+  border-top: solid;
+}
+.grass {
+  border-color: lawngreen;
+}
+.fighting {
+  border-color: saddlebrown;
+}
+.fire {
+  border-color: red;
+}
+.poison {
+  border-color: darkgreen;
+}
+.rock {
+  border-color: gray;
+}
+.ghost {
+  border-color: black;
+}
+
+.psychic {
+  border-color: rebeccapurple;
+}
+
+.dragon {
+  border-color: royalblue;
+}
+
+.fairy {
+  border-color: hotpink;
+}
+
+.shadow {
+  border-color: darkseagreen;
+}
+
+.normal {
+  border-color: plum;
+}
+
+.flying {
+  border-color: skyblue;
+}
+
+.ground {
+  border-color: sandybrown;
+}
+
+.bug {
+  border-color: yellowgreen;
+}
+
+.steel {
+  border-color: slategray;
+}
+.water {
+  border-color: navy;
+}
+
+.electric {
+  border-color: yellow;
+}
+
+.ice {
+  border-color: deepskyblue;
+}
+
+.dark {
+  border-color: darkgray;
+}
+
+.unknown {
+  border-color: red blue yellow green;
+}
+.display {
+  font-size: 21px;
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+<!--entire screen-->
+<!-- iterate over my array on div that is a column  -->
+<div class="container">
+  <h1 style="text-align: center;">Berries</h1>
+
+  <div class="row">
+    <div *ngFor="let n of berryArray" class="col-lg-6 col-sm-12">
+      <app-individual-berry [berryModel]="n"></app-individual-berry>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <ul id="listMenu">
+        <li *ngFor="let x of pageNums; let i = index">
+          <button (click)="getBerryAgain(i)">{{ i + 1 }}</button>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
