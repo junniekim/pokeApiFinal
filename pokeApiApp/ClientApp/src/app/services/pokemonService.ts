@@ -61,7 +61,7 @@ export class PokemonService extends BaseService {
                   x.type.name.slice(1) +
                   ' '
               })
-              p.sprite = res.sprites.front_shiny
+              p.sprite = res.sprites.front_default
               //good to push
               allPokemon.push(p)
             })
@@ -77,15 +77,3 @@ export class PokemonService extends BaseService {
     return this.http.get<any>(pokeUrl)
   }
 }
-// p.stat[0].name= res.stats[0].stat.name;
-// p.stat[1].name=  res.stats[1].stat.name;
-// p.stat[2].name=  res.stats[2].stat.name;
-// p.stat[3].name=  res.stats[3].stat.name;
-// p.stat[4].name=  res.stats[4].stat.name;
-// p.stat[5].name=  res.stats[5].stat.name;
-// p.stat[0].baseStat= res.stats[0].baseStat;
-// p.stat[1].baseStat= res.stats[1].baseStat;
-// p.stat[2].baseStat= res.stats[2].baseStat;
-// p.stat[3].baseStat= res.stats[3].baseStat;
-// p.stat[4].baseStat= res.stats[4].baseStat;
-// p.stat[5].baseStat= res.stats[5].baseStat;
